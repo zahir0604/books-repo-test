@@ -1,9 +1,6 @@
 package twyla;
 
-import org.junit.AfterClass;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.*;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -13,6 +10,11 @@ public class MyBooksPageTest {
     private MyBooksPage myBooksPage;
 
     private static final String USER = "admin";
+
+    @BeforeClass
+    public static void beforeClass() throws Exception {
+        Page.initializeDriver();
+    }
 
     @Before
     public void setUp() throws Exception {
@@ -77,7 +79,7 @@ public class MyBooksPageTest {
             Page.pause(2000);
             myBooksPage = new MyBooksPage(USER);
             myBooksPage.addBook(id, "Head First Java");
-
+            Page.pause(2000);
             Alert alert = HomePage.driver.switchTo().alert();
             Assert.assertEquals("Book already exists", alert.getText());
             alert.accept();

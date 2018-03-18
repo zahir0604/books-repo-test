@@ -15,6 +15,7 @@ public class HomePageTest {
 
     @BeforeClass
     public static void setUp() throws Exception {
+        Page.initializeDriver();
         homePage = new HomePage();
     }
 

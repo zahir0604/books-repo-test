@@ -31,7 +31,7 @@ public abstract class BooksPage extends Page{
     }
 
     protected String getRandomID() {
-        int id = (int) (Math.random() * 1000);
+        int id = (int) (Math.random() * 10000);
         return String.valueOf(id);
     }
 }
