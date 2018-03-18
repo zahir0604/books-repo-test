@@ -6,7 +6,7 @@ public class CommentsByUserPage extends CommentsPage {
 
     public CommentsByUserPage(String user) {
         super();
-        String url = BASE_URL + "/commentsByUser";
+        String url = getBaseUrl() + "/commentsByUser";
         Cookie cookie = new Cookie("user", user);
         openPage(url);
         driver.manage().addCookie(cookie);

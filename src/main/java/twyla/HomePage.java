@@ -18,7 +18,7 @@ public class HomePage extends Page {
 
     public HomePage() {
         super();
-        openPage(BASE_URL);
+        openPage(getBaseUrl());
         initLoginPage();
     }
 

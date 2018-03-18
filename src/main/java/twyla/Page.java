@@ -1,18 +1,45 @@
 package twyla;
 
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
 public abstract class Page {
 
-    public static final String BASE_URL = "http://localhost:4200";
-
-    public static WebDriver driver;
+   public static WebDriver driver;
     static String directoryPath = System.getProperty("user.dir");
 
     public Page() {
 
+    }
+
+    public String getBaseUrl() {
+        JSONParser parser = new JSONParser();
+        try {
+            Object obj = parser.parse(getFileAsString());
+            JSONObject jsonObject = (JSONObject) obj;
+            return  jsonObject.get("url").toString();
+        }catch (ParseException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
+    private String getFileAsString() {
+        try {
+            return new String(Files.readAllBytes(Paths.get("src", "main", "resources", "configuration.json")));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public static void initializeDriver() {

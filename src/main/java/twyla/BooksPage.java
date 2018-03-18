@@ -10,7 +10,7 @@ public abstract class BooksPage extends Page{
 
     public BooksPage(String url, String user) {
         super();
-        url = BASE_URL + url;
+        url = getBaseUrl() + url;
         Cookie cookie = new Cookie("user", user);
         openPage(url);
         driver.manage().addCookie(cookie);
