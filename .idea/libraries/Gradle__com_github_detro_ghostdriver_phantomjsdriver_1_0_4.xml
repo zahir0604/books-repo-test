@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.detro.ghostdriver:phantomjsdriver:1.0.4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.detro.ghostdriver/phantomjsdriver/1.0.4/f3680fd51b1b781dca94ecbe3c25e3b0beccd4d9/phantomjsdriver-1.0.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.detro.ghostdriver/phantomjsdriver/1.0.4/57987ff83dc15576b698401bc14af0dc6cbab4e1/phantomjsdriver-1.0.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.jbehave.web:jbehave-web-selenium:3.6-beta-2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jbehave.web/jbehave-web-selenium/3.6-beta-2/b98968e64f5d5ca12e9349d11759a9326aeba0a1/jbehave-web-selenium-3.6-beta-2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jbehave.web/jbehave-web-selenium/3.6-beta-2/d084b7197aa45f1cbf6ab7549eba5e6a9eb3435/jbehave-web-selenium-3.6-beta-2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
