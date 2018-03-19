@@ -1,12 +1,12 @@
 *.class
 
 
-build
-.gradle
-.idea
-.settings
-bin
-catalina.home_IS_UNDEFINED
+/build
+/.gradle
+/.idea
+/.settings
+/bin
+
 .classpath
 .project
 ../.gradle
