@@ -77,7 +77,6 @@ public class MyBooksPageTest {
             myBooksPage.addBook(id, "Head First Java");
 
             Page.pause(5000);
-            myBooksPage = new MyBooksPage(USER);
             myBooksPage.addBook(id, "Head First Java");
             Page.pause(5000);
             Alert alert = HomePage.driver.switchTo().alert();
