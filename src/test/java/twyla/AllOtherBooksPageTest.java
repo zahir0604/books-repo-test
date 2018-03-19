@@ -40,17 +40,16 @@ public class AllOtherBooksPageTest {
 
     @Test
     public void testBooksClick() throws Exception {
-        System.out.println(allOtherBooksPage.getBooks().size());
 
         if (allOtherBooksPage.getBooks().size() == 0) {
 
             MyBooksPage page = new MyBooksPage("testUser");
             page.addBook(page.getRandomID(), "Test title");
-            Page.pause(2000);
+            Page.pause(3000);
         }
 
         allOtherBooksPage = new AllOtherBooksPage(USER);
-        Page.pause(1000);
+        Page.pause(2000);
         allOtherBooksPage.getBooks().get(0).findElement(By.tagName("a")).click();
     }
 

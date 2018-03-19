@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="twyla.HomePageTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2018-03-19T02:29:45" hostname="NAIN2704LP17638" time="0.337">
+  <properties/>
+  <testcase name="testUsernameField" classname="twyla.HomePageTest" time="0.087"/>
+  <testcase name="testTitle" classname="twyla.HomePageTest" time="0.004"/>
+  <testcase name="testEmptyUserId" classname="twyla.HomePageTest" time="0.059"/>
+  <testcase name="testSuccessfulLogin" classname="twyla.HomePageTest" time="0.186"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91) on port 40069
+Only local connections are allowed.
+Mar 18, 2018 10:29:41 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+</testsuite>

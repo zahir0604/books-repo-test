@@ -76,10 +76,10 @@ public class MyBooksPageTest {
             String id = myBooksPage.getRandomID();
             myBooksPage.addBook(id, "Head First Java");
 
-            Page.pause(2000);
+            Page.pause(5000);
             myBooksPage = new MyBooksPage(USER);
             myBooksPage.addBook(id, "Head First Java");
-            Page.pause(2000);
+            Page.pause(5000);
             Alert alert = HomePage.driver.switchTo().alert();
             Assert.assertEquals("Book already exists", alert.getText());
             alert.accept();
@@ -96,8 +96,9 @@ public class MyBooksPageTest {
         if (myBooksPage.getBooks().size() == 0) {
 
             myBooksPage.addBook(myBooksPage.getRandomID(), "New Title");
+            Page.pause(3000);
         }
-
+        Page.pause(2000);
         myBooksPage.getBooks().get(0).findElement(By.tagName("a")).click();
     }
 

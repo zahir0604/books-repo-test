@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="twyla.CommentsByUserPageTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2018-03-19T02:29:35" hostname="NAIN2704LP17638" time="2.743">
+  <properties/>
+  <testcase name="testHeaders" classname="twyla.CommentsByUserPageTest" time="2.276"/>
+  <testcase name="testLabels" classname="twyla.CommentsByUserPageTest" time="0.467"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91) on port 16787
+Only local connections are allowed.
+Mar 18, 2018 10:29:35 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+</testsuite>
